@@ -2,12 +2,12 @@ body {
     background-color: rgb(237, 243, 240);
     color: black;
     font-family: Helvetica, sans-serif;
-    margin: 0px;
+    margin: 0;
 }
 header {
     background-color: rgba(6, 255, 255, 0.014);
     color: rgb(86, 102, 117);
-    margin: 0px;
+    margin: 0;
     padding: 20px;
     text-align: left;
     font-weight: bold;
@@ -47,7 +47,12 @@ header {
 .navi :hover {
     color: rgb(57, 206, 191);
     transition: 0.5s 0.2s;
-    box-shadow: rgb(46, 163, 151)  0px 3px;
+    box-shadow: rgb(46, 163, 151)  0 3px;
+}
+
+.knop:hover {
+    color: white;
+    background-color: #00878c;
 }
 
 .knop {
@@ -60,31 +65,17 @@ header {
     height: 50px;
     line-height: 50px;
     margin-right: 90px;
-    border: 1px solid white;
     border-radius: 10px;
     background-color: white;
+    padding: 8px;
+    box-shadow: 0px 5px 7px 0 rgb(0 0 0 / 3%);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-footer {
-
-    color: bisque;
-
-    margin: 0px;
-    padding: 20px;
-    text-align: right;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 16pt;
-    font-family: Helvetica, sans-serif;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
 main {
     background-color: rgba(248, 248, 248, 0.959);
     color: black;
-    margin: 0px 0px 88px;
     padding: 20px;
     font-size: 14pt;
     font-family: Helvetica, sans-serif;
@@ -94,3 +85,119 @@ a {
     text-decoration: none;
     transition: 1s;
 }
+
+.why h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    font-family: Roboto, sans-serif
+}
+
+.why-bank {
+    width: 1264px;
+    padding: 16px;
+    background-color: #11ccd18c;
+    display: flex;
+    gap: 15px;
+    margin-inline: auto;
+    border-radius: 15px;
+}
+
+.why-bank-title {
+    font-size: 1.75rem;
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.why-bank-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: 13px;
+    font-family: "Roboto", sans-serif;
+    word-wrap: break-word;
+}
+
+.about-title {
+    border-radius: 15px;
+    height: 88px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 45px;
+    width: 1296px;
+    background: linear-gradient(153.64deg, #11ccd1 10%, #f91842 90%);
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-inline: auto;
+}
+
+.about-info {
+    box-shadow: 0 4px 20px rgb(33 33 33 / 3%);
+    border-radius: 15px;
+    padding: 3rem;
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.about-text-title {
+    color:  rgb(51, 51, 51);
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    margin-bottom: 17px;
+    margin-top: 17px;
+}
+
+.about-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+}
+
+.about-text-year {
+    margin-bottom: 13px;
+}
+
+
+.menu {
+    background: linear-gradient(135deg, #fff 0%, #11ccd1 100%);
+    position: fixed;
+    bottom: 0;
+    padding: 20px 20px 20px 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+}
+
+.menu a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+footer {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #7a838b;
+    font-weight: 500;
+}
+
+.footer-bonk {
+    text-align: left;
+    margin-left: 250px;
+}
+

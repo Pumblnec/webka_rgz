@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс валют</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="course.css">
+    <link rel="shortcut icon" href="../fav.ico" type="image/x-icon">
+</head>
+<body>
+<div class="menu">
+    <a href="../news/news.html">Новости</a>
+    <a href="../project/main.html">О банке</a>
+    <a href="../video/video.html">Видео</a>
+    <a href="../contacts/contacts.html">Контакты</a>
+</div>
+
+<header>
+    <div style="margin-left: 250px;">
+        <div class="navi"> <a href="https://arvand.tj/person/">Оригинальный сайт</a></div>
+
+        <div class="navi"> <a href="">Частным лицам</a></div>
+
+        <div class="navi"> <a href="">Предпринимателям</a></div>
+
+        <div class="navi"> <a href="">О банке</a></div>
+
+        <div class="navi"> <a href="">Вакансии</a></div>
+
+        <div class="navi"> <a href="">Отзывы</a></div>
+    </div>
+
+</header>
+
+<main>
+    <div class="course-block">
+        <div class="course-title">
+            Конвертер валют
+        </div>
+        <div class="course-inputs">
+            <div class="course-input-space">
+                <div class="course-input-title">
+                    Введите валюту для перевода:
+                </div>
+                <div class="course-input">
+                    <input type="text" id="currencyInput" placeholder="Введите рубли или канадские доллары">
+                    <select id="currencySelector">
+                        <option value="RUB">RUB</option>
+                        <option value="CAD">CAD</option>
+                    </select>
+                </div>
+            </div>
+            <div class="course-input-space">
+                <div class="course-input-title">
+                    Конвертированная валюта:
+                </div>
+                <div class="course-input course-input-2">
+                    <input type="number" id="convertedInput" placeholder="Конвертированная валюта">
+                </div>
+            </div>
+            <div class="course-button">
+                <button id="convertButton">
+                    Конвертировать
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-bonk">
+        <img src="../бонк.png" height="60px">
+    </div>
+    Варюхин Иван ©2024
+</footer>
+
+<script src="https://www.cbr-xml-daily.ru/money.js"></script>
+<script src="course.js"></script>
+</body>
+</html>

@@ -176,6 +176,8 @@ a {
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 100;
+    transition: 1s;
+    border-radius: 10px;
 }
 
 .menu a {
@@ -184,6 +186,11 @@ a {
     color: #333;
     text-decoration: none;
     margin-right: 5px;
+}
+
+.menu:hover {
+    padding: 30px 30px 30px 35px;
+    transition: 0.7s;
 }
 
 footer {
